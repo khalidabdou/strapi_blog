@@ -1,15 +1,6 @@
 module.exports = [
   'strapi::errors',
-    {
-      name: 'strapi::security',
-      config: {
-        contentSecurityPolicy: {
-          directives: {
-            'img-src': ['*'],
-          },
-        }
-      },
-    },
+  'strapi::security',
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
